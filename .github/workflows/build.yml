@@ -22,6 +22,8 @@ jobs:
             lecture*/lecture*.tex
             organization/organization.tex
             syllabus/syllabus.tex
+          args: -pdf -f -file-line-error -interaction=nonstopmode
+          continue_on_error: true
 
       - name: Collect PDFs
         run: |
