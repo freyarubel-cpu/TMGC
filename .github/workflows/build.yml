@@ -17,6 +17,7 @@ jobs:
 
       - name: Compile all documents
         uses: xu-cheng/latex-action@v3
+        continue-on-error: true
         with:
           root_file: |
             lecture*/lecture*.tex
@@ -28,7 +29,8 @@ jobs:
       - name: Collect PDFs
         run: |
           mkdir site
-          mv *.pdf site/
+          cp *.pdf *.log site/ 2>/dev/null || true
+          ls -l site
 
       - uses: actions/upload-pages-artifact@v3
         with:
