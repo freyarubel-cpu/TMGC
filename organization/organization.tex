@@ -1,0 +1,192 @@
+\documentclass{beamer}
+
+
+% Load essential packages
+\usepackage{hyperref} % Only load once to avoid conflicts
+\usepackage{stile}
+\usepackage{subcaption}
+\usepackage{tcolorbox}
+\usepackage[font=scriptsize,skip=1pt]{caption}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage[backend=biber, style=authoryear, maxnames=3, minnames=1, abbreviate=false, date=long, url=false, isbn=false, doi=false]{biblatex}
+\addbibresource{organization/bib.bib} % Ensure this matches your bibliography file name
+
+\interfootnotelinepenalty=10000
+
+\usepackage{latexsym, amsmath, xcolor, multicol, booktabs, calligra}
+\usepackage{graphicx, pstricks, listings, stackengine}
+
+% Hyperref setup
+\hypersetup{
+    hidelinks,
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue,
+    urlcolor=black
+}
+
+% Font theme for Beamer
+\usefonttheme[onlymath]{serif}
+
+% Custom definitions
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+% Beamer color settings
+\setbeamercolor{block title}{bg=blue!70!white, fg=white}
+\setbeamercolor{block body}{bg=blue!10!halfgray, fg=white}
+\setbeamercolor{section in head/foot}{fg=white}
+\setbeamercolor{subsection in head/foot}{fg=white}
+\setbeamercolor{title in head/foot}{fg=white}
+
+
+% Listings settings for code highlighting
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+% Title page info
+\author{Freya Rubel}
+\title{Trade, Migration and Global Challenges}
+\subtitle{Course Logistics}
+\institute{}
+\date{13.10.2026}
+
+\graphicspath{{organization/}}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show, subsectionstyle=show/shaded/hide, subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\section{General Information}
+
+\begin{frame}{Course Information}
+\begin{tabular}{ll}
+   Seminar:  & Trade, Migration and Global Challenges \\
+   
+   Credits:  & 3 ECTS for active participation (without grade) \\
+   & 7 ECTS for written exam (with grade) \\
+   Class time: & Tuesdays, 14:15am-15:45pm, room: 340 \\
+   Communication: & Email and Moodle \\
+   Final examination: & In-class presentation (individual) \\
+   & + written exam 
+\end{tabular}
+\end{frame}
+
+\section{Course Outline}
+
+\begin{frame}{Introduction to Globalization + Trade} 
+  \begin{tabular}{ll}
+       \textbf{Date} & \textbf{Topic} \\
+       \hline
+       13.10.2025 & Course Logistics \\
+       20.10.2025 & Introduction to Globalization \\
+       30.10.2025 & Gains from Trade \\
+       06.10.2025 & Trade and the Environment \\
+       13.11.2025 & Trade and Health \\
+       20.11.2025 & Trade and Inequality \\
+       27.11.2025 & Protectionism and Trade Wars
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{Migration} 
+  \begin{tabular}{ll}
+       \textbf{Date} & \textbf{Topic} \\
+       \hline
+       04.12.2025 & Determinants of Migration \\
+       11.12.2025 & Migration and Global Welfare \\
+       18.12.2025 & Impact of Migration on Host and Origin Countries \\
+       08.01.2026 & Populism 
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{Student Presentations} 
+  \begin{tabular}{ll}
+       \textbf{Date} & \textbf{Topic} \\
+       \hline
+       15.01.2025 & Student presentations \\
+       22.01.2025 & Student presentations \\
+       29.01.2025 & Student presentations \\
+       05.01.2025 & Student presentations \\
+       12.02.2025 & Student presentations \\
+  \end{tabular}
+\vspace{0.3cm} \\
+  The list of papers to be presented will be uploaded on the FU blackboard as soon as the final number of students has been determined. Most likely, we will hear 3 presentations per session. Signing up for presentation slots will be allocated on a first come first serve basis. \\
+  % I was thinking of single presentations and two per session with enough time to discuss afterwards.
+  % If the number of students stays the same, it's more likely going to be 2x2 presentations per session or 3x1 presentation (if we're up to 18 people)
+\end{frame}
+
+\section{Passing the Course}
+
+\begin{frame}{Requirements}
+    \textbf{Active Participation} \\
+    Students should be present for at least 80\% of the classes in order to pass the course. \\
+    Students who don't choose to write the final exam are still required to give a presentation at the end of the semester. \vspace{0.1cm}\\
+    \textbf{Prerequirements} \\
+    Students should demonstrate a basic knowledge of economics and statistics either through the successful completion of the economics orientation module (Economic Reasoning and Statistical Reasoning) or through past coursework in a different degree or at a different university.
+\end{frame}
+
+\begin{frame}{Examination}
+    \textbf{The course is part of the Module (Adv) Economics A. To pass the overall module, you need to }\textbf{attend both parts}\textbf{ of the module, but you only need to take the examination in one of the courses.} \\
+    For those who want to be graded in this part of the module, the final grade for the course will be a weighted average of two assignments:
+    \begin{itemize}
+        \item 25\% In-class presentation of an economic paper 
+        \item 75\% Written exam
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Presentation structure}
+The presentation should last between 15-20 minutes.
+    \begin{enumerate}
+        \item Title page
+        \item Motivation and research question
+        \item Background
+        \item Methodology
+        \item Data 
+        \item Main results 
+        \item (Caveat, Limitations, Shortcomings)
+        \item Conclusion, Policy implications
+    \end{enumerate}
+    A classroom discussion on the paper and topic will follow the presentation. Presenters should be prepared to answer questions related to the reading.
+\end{frame}
+
+\begin{frame}{Written Exam}
+\begin{tabular}{ll}
+     \textbf{Time:} & 19.02.2026 at 10:15 (most likely). \\
+    \textbf{Scope:} & 90 minutes 
+\end{tabular}
+\vspace{0.2cm} \\
+    The exam will be partly questioning your understanding of the theoretical concepts introduced in class and partly expect you to demonstrate your ability to make connections, elaborate on channels and analyse the relationship between globalization and the topics dicussed in class.
+\end{frame}
+
+\section{Contact Information}
+\begin{frame}{Contact}
+\begin{tcolorbox}
+    Freya Rubel \\
+    Lansstraße 7-9 (JFKI), Room 231 \\
+    f.rubel@fu-berlin.de \\
+    office hours by appointment
+\end{tcolorbox}
+
+\end{frame}
+
+\end{document}
+

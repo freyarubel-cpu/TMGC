@@ -1,0 +1,81 @@
+% !TeX encoding=UTF-8
+
+%---Zeichenformat und Spracheinstellung---%
+%
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,british]{babel}
+\usepackage{marvosym}
+\usepackage[hang]{footmisc}
+
+%
+%-----------------------------------------%
+
+%---Mathematiksymbole etc.---%
+%
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+%
+%----------------------------%
+
+%---Format von Zitaten und Literaturverzeichnis---%
+%
+
+\interfootnotelinepenalty=10000
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=authoryear, maxnames=2,minnames=1, abbreviate=false,date=long,url=false,backend=bibtex,
+isbn=false,doi=false]{biblatex}
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%citestyle=authoryear
+%]{biblatex}
+\addbibresource{Meine_Bibliothek.bib} % <- so muss die Bibliography heißen
+\setlength{\bibitemsep}{\medskipamount}
+
+%---References in gewüschter Größe---%
+\renewcommand*{\bibfont}{\footnotesize}
+
+%
+%-------------------------------------------------%
+
+%---Ermöglicht das Einfügen von Bildern etc.---%
+%
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[caption = false]{subfig}
+\usepackage{caption}
+\captionsetup{format = plain, labelsep = quad, indention = 0.08cm}
+\captionsetup{font = scriptsize, labelfont = footnotesize}
+\captionsetup{format=plain}
+\usepackage[labelfont=bf]{caption}
+\captionsetup[table]{labelsep=space, 
+         justification=justified, singlelinecheck=off}
+\captionsetup[figure]{labelsep=space, 
+         justification=justified, singlelinecheck=off}
+%
+%----------------------------------------------%
+
+\usepackage{ifthen, calc}
+
+\usepackage[scaled]{helvet}
+
+\usepackage{parskip}
+\tolerance=2000
+\setlength{\emergencystretch}{20pt}
+
+%---Seitenlayout---%
+%
+\usepackage[onehalfspacing]{setspace}
+\usepackage{fancyhdr} 
+\usepackage[a4paper, left=3.5cm, right=3cm, top=3cm, bottom=2.4cm, marginparsep=5mm, marginparwidth=10mm, headheight=7mm, headsep=1.5cm, footskip=1.5cm, includefoot]{geometry}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%
+%------------------%
