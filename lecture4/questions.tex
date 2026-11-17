@@ -1,0 +1,85 @@
+\documentclass{beamer}
+
+
+% Load essential packages
+\usepackage{hyperref} % Only load once to avoid conflicts
+\usepackage{stile}
+\usepackage{subcaption}
+\usepackage{tcolorbox}
+\usepackage[font=scriptsize,skip=1pt]{caption}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage[backend=biber, style=authoryear, maxnames=3, minnames=1, abbreviate=false, date=long, url=false, isbn=false, doi=false]{biblatex}
+\addbibresource{lecture1/bib.bib} % Ensure this matches your bibliography file name
+
+\interfootnotelinepenalty=10000
+
+\usepackage{latexsym, amsmath, xcolor, multicol, booktabs, calligra}
+\usepackage{graphicx, pstricks, listings, stackengine}
+
+% Hyperref setup
+\hypersetup{
+    hidelinks,
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=deepblue,
+    urlcolor=black
+}
+
+% Font theme for Beamer
+\usefonttheme[onlymath]{serif}
+
+% Custom definitions
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+% Beamer color settings
+\setbeamercolor{block title}{bg=blue!70!white, fg=white}
+\setbeamercolor{block body}{bg=blue!10!halfgray, fg=white}
+\setbeamercolor{section in head/foot}{fg=white}
+\setbeamercolor{subsection in head/foot}{fg=white}
+\setbeamercolor{title in head/foot}{fg=white}
+
+
+% Listings settings for code highlighting
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+\author{Freya Rubel}
+\title{Trade, Migration and Global Challenges}
+\subtitle{Trade and Health - Questions}
+\institute{}
+\date{17.11.2026}
+
+\graphicspath{{lecture4/}}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Question}
+    \textit{How can we implement new habits in order to improve health care? (systematic changes)} \pause \vspace{0.5cm}\\
+    Habits are hard to change through information and willpower. People are \textbf{present-biased} and act on routine. Lasting change usually comes from changing the environment in which decisions are made $\implies$ The healthy option must become the default, the cheaper one, or the easier one.
+\begin{enumerate}\small
+  \item Prices: sugar and alcohol taxation for example
+  \item Regulation: mandatory warning labels, bans of certain additives or chemicals
+  \item Defaults: mainly vegetarian food in cafeterias, opt-out organ donation instead of active consent cards 
+\end{enumerate}
+\end{frame}
+
+ 
+\end{document}
