@@ -384,26 +384,16 @@ Two societies with the same median income and same poverty line can have very di
 \begin{frame}{Methodology}
 The authors' identification of a causal impact relies on the regional variation in exposure to the competition from abroad.
     \begin{itemize}
-        \item \textcite{china_syndrome} exploit the pre-existing industry composition and specialization prior to the trade shock as a measure of exposure to the competition from abroad.
-        \item \textbf{Instrumental Variables (IV) approach}: The growth in Chinese imports to the US are instrumented by the growth in Chinese imports to other high-income countries. 
-        \item \textbf{Outcome Variables}: Changes in manufacturing employment, wages, and transfer payments.
+        \item \textcite{china_syndrome} exploit the pre-existing industry composition per CZ prior to the trade shock as a measure of exposure to the competition from abroad.
+        \item \textbf{Instrumental Variables (IV) approach}: The growth in Chinese imports to the U.S. are instrumented by the growth in Chinese imports to other high-income countries. 
     \end{itemize}
 \end{frame}
 
-% Slide 6 - Key Variables
-\begin{frame}{Key Variables and Measurement}
-    \begin{itemize}
-        \item \textbf{Import Exposure}: Change in Chinese import exposure per worker in a commuting zone
-        \item \textbf{Labor Market Outcomes}: Employment levels, labor force participation, and wage changes across sectors
-        \item \textbf{Social Transfers}: Uptake of unemployment, disability, welfare, and other public benefits
-        \item \textbf{Control Variables}: commuting zone demographics, initial employment levels, etc.
-    \end{itemize}
-\end{frame}
 
-\begin{frame}{Empirical Strategy: Instrumental Variables (IV) Approach}
+\begin{frame}{Instrumental Variables (IV) Approach}
     \begin{itemize}
         \item \textbf{Justification}: Direct measures of U.S. import demand might be endogenous (correlated with the outcome variables that we are trying to observe). An instrument isolates China’s supply-side growth and should only capture the variation in the variable of interest that is due to a growth in Chinese productivity and not due to U.S. demand or manufacturing conditions.
-        \item \textbf{IV Construction}: Chinese export growth to high-income countries \textit{besides} the U.S. to capture exogenous changes in Chinese export competitiveness.
+        \item \textbf{IV Construction}: $Z_i = \sum_j \underbrace{s_{ij}}_{\text{share}} \cdot \underbrace{g_j}_{\text{shift}}$
         \item \textbf{Identifying Assumption}: Growth in imports in other high-income countries is exogenous (orthogonal) to U.S. local labor market conditions.
     \end{itemize}
 \end{frame}
